@@ -1,19 +1,19 @@
 package annotations;
 
-import annotations.annotatedclass.UserAnnotation;
-import annotations.annotatedclass.ValidateStringLength;
+import annotations.annotations.UserAnnotation;
+import annotations.annotations.StringLengthCheckAnnotation;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
 
-public class Annotated {
+public class AnnotationSample {
     // @UserAnnotation(idx = 0, name = "")  // '@UserAnnotation' not applicable to constructor
 //    public Annotated(){}
 
     public static void main(String[] args) {
         System.out.println("------------------------------------------");
-        Method[] methods = Annotated.class.getDeclaredMethods();
+        Method[] methods = AnnotationSample.class.getDeclaredMethods();
         for (Method method:methods) {
             System.out.println("---method---");
             UserAnnotation anno = method.getAnnotation(UserAnnotation.class);
@@ -26,7 +26,7 @@ public class Annotated {
             System.out.println("---param---");
             Parameter[] params = method.getParameters();
             for (Parameter param:params) {
-                ValidateStringLength paramAnno = param.getAnnotation(ValidateStringLength.class);
+                StringLengthCheckAnnotation paramAnno = param.getAnnotation(StringLengthCheckAnnotation.class);
                 if (paramAnno!=null) {
                     System.out.printf("param %s is annotated with %s\n", param, paramAnno.annotationType().getName());
                     System.out.printf("min is %d, max is %d\n", paramAnno.min(), paramAnno.max());
@@ -39,7 +39,7 @@ public class Annotated {
         annotatedMethod("validate this!", 1);
     }
     @UserAnnotation(idx = 0, name = "anonymous")
-    public static void annotatedMethod(@ValidateStringLength(min = 1, max = 10) String validateThisString, int noAnnoParam) {
+    public static void annotatedMethod(@StringLengthCheckAnnotation(min = 1, max = 10) String validateThisString, int noAnnoParam) {
         System.out.println(validateThisString);  // Validation logic is not implemented
         System.out.println(noAnnoParam);  // check for nothing
     }
