@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- Exception 샘플">
-      <change beforePath="$PROJECT_DIR$/src/throwingexceptions/ThrowingExceptionSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/throwingexceptions/ThrowingExceptionSample.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- Exception 샘플 수정">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/annotations/Annotated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/annotations/SampleUsageLombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/annotations/annotatedclass/UserAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/annotations/annotatedclass/ValidateStringLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpleinherit/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpleinherit/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpleinherit/SimpleInheritSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_java_basic_2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_java_basic_2024.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +48,28 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/kidsnote/Workspace/IdeaProjects/sample_java_basic_2024/src/throwingexceptions/runtimeexceptionthrowers",
+    "last_opened_file_path": "/Users/kidsnote/Workspace/IdeaProjects/sample_java_basic_2024/src/annotations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/annotations" />
       <recent name="$PROJECT_DIR$/src/throwingexceptions/runtimeexceptionthrowers" />
       <recent name="$PROJECT_DIR$/src/throwingexceptions/exceptionthrowers" />
       <recent name="$PROJECT_DIR$/src/abstractandinterface" />
       <recent name="$PROJECT_DIR$/src/accessmodifier/b" />
-      <recent name="$PROJECT_DIR$/src/accessmodifier/a" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="annotations.annotatedclass" />
       <recent name="abstractandinterface" />
     </key>
   </component>
@@ -66,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704015437808</updated>
-      <workItem from="1704015438834" duration="2835000" />
+      <workItem from="1704015438834" duration="4239000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -84,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704017859573</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Exception 샘플 수정">
+      <option name="closed" value="true" />
+      <created>1704018295927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704018295927</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플" />
     <MESSAGE value="- Exception 샘플" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Exception 샘플" />
+    <MESSAGE value="- Exception 샘플 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Exception 샘플 수정" />
   </component>
 </project>
