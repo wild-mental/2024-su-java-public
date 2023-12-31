@@ -7,7 +7,7 @@ import throwingexceptions.runtimeexceptionthrowers.MyRuntimeExceptionThrower;
 
 public class ThrowingExceptionSample {
     public static void main(String[] args) {
-        System.out.println("Main is called");
+        System.out.println("main is called");
         MyExceptionThrower met = new MyExceptionThrower();
         try {
             met.ThrowMyException();
