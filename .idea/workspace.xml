@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- 중첩 클래스 샘플 추가">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_api_2_22_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_core_2_22_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stringandlogging/Log4JSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stringandlogging/StringControlSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_java_basic_2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_java_basic_2024.iml" afterDir="false" />
-    </list>
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704015437808</updated>
-      <workItem from="1704015438834" duration="9454000" />
+      <workItem from="1704015438834" duration="9801000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -131,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704020183556</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선">
+      <option name="closed" value="true" />
+      <created>1704030651179</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704030651179</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +144,7 @@
     <MESSAGE value="- 상속 샘플 추가&#10;- 어노테이션 샘플 추가" />
     <MESSAGE value="- 어노테이션 샘플 수정" />
     <MESSAGE value="- 중첩 클래스 샘플 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 중첩 클래스 샘플 추가" />
+    <MESSAGE value="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
   </component>
 </project>
