@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- gitignore 추가">
+      <change afterPath="$PROJECT_DIR$/src/multithreading/MultiThreadingSample.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +63,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="multithreading" />
       <recent name="annotations.annotatedclass" />
       <recent name="abstractandinterface" />
     </key>
@@ -73,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704015437808</updated>
-      <workItem from="1704015438834" duration="9801000" />
+      <workItem from="1704015438834" duration="10410000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -131,11 +134,30 @@
       <option name="project" value="LOCAL" />
       <updated>1704030651179</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- gitignore 추가">
+      <option name="closed" value="true" />
+      <created>1704031132631</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704031132631</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플" />
@@ -145,6 +167,7 @@
     <MESSAGE value="- 어노테이션 샘플 수정" />
     <MESSAGE value="- 중첩 클래스 샘플 추가" />
     <MESSAGE value="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
+    <MESSAGE value="- gitignore 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="- gitignore 추가" />
   </component>
 </project>
