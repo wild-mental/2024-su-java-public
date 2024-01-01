@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- gitignore 추가">
-      <change afterPath="$PROJECT_DIR$/src/multithreading/MultiThreadingSample.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- 멀티스레딩 샘플 추가&#10;- 동시성 제어 샘플 추가">
+      <change afterPath="$PROJECT_DIR$/src/copilottest/CopilotMatchSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2aIoQQelNJJ3tcpeqDYgqnEBTOi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,7 +48,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,7 +77,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704015437808</updated>
-      <workItem from="1704015438834" duration="10410000" />
+      <workItem from="1704015438834" duration="13088000" />
+      <workItem from="1704116475776" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -142,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704031132631</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- 멀티스레딩 샘플 추가&#10;- 동시성 제어 샘플 추가">
+      <option name="closed" value="true" />
+      <created>1704031565503</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704031565503</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +178,11 @@
     <MESSAGE value="- 중첩 클래스 샘플 추가" />
     <MESSAGE value="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
     <MESSAGE value="- gitignore 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="- gitignore 추가" />
+    <MESSAGE value="- 멀티스레딩 샘플 추가&#10;- 동시성 제어 샘플 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 멀티스레딩 샘플 추가&#10;- 동시성 제어 샘플 추가" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
