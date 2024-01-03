@@ -37,11 +37,5 @@ public class Cat {
         int catAge = myScottishFold.getAge();
         float catFurLength = myScottishFold.getFurLength();
         String catName = myScottishFold.getName();
-
-        String a = "a";
-        if (a == new String("a")){
-            System.out.println(a);
-        }
-
     }
 }
