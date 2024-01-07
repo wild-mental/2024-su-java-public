@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="[1/3 수업 진행 내용 추가]&#10;- Java 문법 기본 요소&#10;- 클래스의 구조와 객체화&#10;- 제어문">
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- 동일 객체 vs 동일 값 비교 주석 추가">
+      <change afterPath="$PROJECT_DIR$/src/enumwithcreator/EnumUseSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enumwithcreator/EnumWithCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/AbstractClass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/ConcreteClass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/ImplementationClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/InterfaceSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/InterfaceSample2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shallowanddeep/CopyTypeSample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classandobject/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classandobject/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/AbsAndInterSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/IMyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/MyAbstractClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/MyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accessmodifier/AccessModifierSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accessmodifier/AccessModifierSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sameorequal/SameOrEqualSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sameorequal/SameOrEqualSample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +30,28 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wild-mental&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f9244558-4847-4b92-abe7-456bf0a954e0" />
+        <option name="url" value="https://github.com/wild-mental/2024_java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -74,11 +104,11 @@
   </component>
   <component name="RunManager" selected="Application.Cat">
     <configuration name="Cat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classandobject.Cat" />
+      <option name="MAIN_CLASS_NAME" value="classandobject.objclass.Cat" />
       <module name="sample_java_basic_2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classandobject.*" />
+          <option name="PATTERN" value="classandobject.objclass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,7 +121,7 @@
       <module name="sample_java_basic_2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classandobject.*" />
+          <option name="PATTERN" value="classandobject.objclass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,11 +130,11 @@
       </method>
     </configuration>
     <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classandobject.MyClass" />
+      <option name="MAIN_CLASS_NAME" value="classandobject.objclass.MyClass" />
       <module name="sample_java_basic_2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classandobject.*" />
+          <option name="PATTERN" value="classandobject.objclass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +160,10 @@
       <updated>1704015437808</updated>
       <workItem from="1704015438834" duration="13088000" />
       <workItem from="1704116475776" duration="3838000" />
-      <workItem from="1704175109158" duration="32266000" />
+      <workItem from="1704175109158" duration="59651000" />
+      <workItem from="1704433033093" duration="4929000" />
+      <workItem from="1704518424553" duration="1007000" />
+      <workItem from="1704622143102" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -228,7 +261,47 @@
       <option name="project" value="LOCAL" />
       <updated>1704288578606</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[1/4 수업 진행 예비 내용]&#10;- 참조 자료형(String)의 동일 객체 동일 값 비교">
+      <option name="closed" value="true" />
+      <created>1704289792818</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704289792818</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- 기본자료형과 참조자료형 코드샘플 추가">
+      <option name="closed" value="true" />
+      <created>1704622253454</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622253454</updated>
+    </task>
+    <task id="LOCAL-00015" summary="- 클래스 개념 기초와 객체화 방법 샘플코드 추가">
+      <option name="closed" value="true" />
+      <created>1704622298324</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622298324</updated>
+    </task>
+    <task id="LOCAL-00016" summary="- 기본자료형과 참조자료형 코드샘플 추가 2">
+      <option name="closed" value="true" />
+      <created>1704622328626</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622328626</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- 간단한 상속 개념 샘플코드 추가">
+      <option name="closed" value="true" />
+      <created>1704622381310</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622381310</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +331,12 @@
     <MESSAGE value="- 깃허브 코파일럿 테스트" />
     <MESSAGE value="- 디버거 사용 테스트용 FactorialCalculator 코드 추가" />
     <MESSAGE value="[1/3 수업 진행 내용 추가]&#10;- Java 문법 기본 요소&#10;- 클래스의 구조와 객체화&#10;- 제어문" />
-    <option name="LAST_COMMIT_MESSAGE" value="[1/3 수업 진행 내용 추가]&#10;- Java 문법 기본 요소&#10;- 클래스의 구조와 객체화&#10;- 제어문" />
+    <MESSAGE value="[1/4 수업 진행 예비 내용]&#10;- 참조 자료형(String)의 동일 객체 동일 값 비교" />
+    <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가" />
+    <MESSAGE value="- 클래스 개념 기초와 객체화 방법 샘플코드 추가" />
+    <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가 2" />
+    <MESSAGE value="- 간단한 상속 개념 샘플코드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 간단한 상속 개념 샘플코드 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
