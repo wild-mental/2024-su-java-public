@@ -1,4 +1,4 @@
-package classandobject;
+package classandobject.objclass;
 
 public class Cat {
 
@@ -34,8 +34,14 @@ public class Cat {
     // Static 메서드
     public static void main (String[]args){
         Cat myScottishFold = new Cat(1, 10.123f, "Scattish");
+
         int catAge = myScottishFold.getAge();
         float catFurLength = myScottishFold.getFurLength();
         String catName = myScottishFold.getName();
+        System.out.printf("%d, %s, %f", catAge, catName, catFurLength);
+        // printf 사용법
+        //  : %[-][0][n][.m]지시자
+
+
     }
 }

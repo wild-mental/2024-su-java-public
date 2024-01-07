@@ -1,4 +1,4 @@
-package classandobject;
+package classandobject.objclass;
 
 public class MyClass {
     // 멤버 변수 (데이터)
