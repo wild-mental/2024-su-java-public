@@ -2,7 +2,7 @@ package simpleinherit;
 
 public class Child extends Parent {
     @Override
-    @SuppressWarnings("deprecation")
+//    @SuppressWarnings("deprecation")
     public void hello(String target) {
         if (target==null || target.isEmpty()) {
             super.hello(target);
