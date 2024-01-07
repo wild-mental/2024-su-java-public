@@ -5,7 +5,7 @@ import throwingexceptions.exceptionthrowers.MyException;
 import throwingexceptions.exceptionthrowers.MyExceptionThrower;
 import throwingexceptions.runtimeexceptionthrowers.MyRuntimeExceptionThrower;
 
-public class ThrowingExceptionSample {
+public class ThrowingCustomExceptionSample {
     public static void main(String[] args) {
         System.out.println("main is called");
         MyExceptionThrower met = new MyExceptionThrower();

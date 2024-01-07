@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- 동일 객체 vs 동일 값 비교 주석 추가">
-      <change afterPath="$PROJECT_DIR$/src/enumwithcreator/EnumUseSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enumwithcreator/EnumWithCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/AbstractClass1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/ConcreteClass1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/ImplementationClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/InterfaceSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/InterfaceSample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceimplement/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shallowanddeep/CopyTypeSample.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="- Enum 클래스 생성자 오버라이드 형태 사용 방법 샘플코드 추가">
+      <change afterPath="$PROJECT_DIR$/src/algorithmsbaekjun/NQueensSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generictypeusage/CheckGenericSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generictypeusage/GenericDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generictypeusage/NonGenericDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stringbuildermethods/MultilineStringExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stringbuildermethods/StringBuilderSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemclasscheck/SystemClassSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemclasscheck/SystemClassSample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/throwingexceptions/ThrowingRuntimeExceptionSample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/AbsAndInterSample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/IMyClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/MyAbstractClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractandinterface/MyClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accessmodifier/AccessModifierSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accessmodifier/AccessModifierSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sameorequal/SameOrEqualSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sameorequal/SameOrEqualSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/throwingexceptions/ThrowingExceptionSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/throwingexceptions/ThrowingCustomExceptionSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/throwingexceptions/runtimeexceptionthrowers/MyRuntimeExceptionThrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/throwingexceptions/runtimeexceptionthrowers/MyRuntimeExceptionThrower.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,26 +61,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/kidsnote/Workspace/IdeaProjects/sample_java_basic_2024/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kidsnote/Workspace/IdeaProjects/sample_java_basic_2024/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -102,7 +98,7 @@
       <recent name="abstractandinterface" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Cat">
+  <component name="RunManager">
     <configuration name="Cat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classandobject.objclass.Cat" />
       <module name="sample_java_basic_2024" />
@@ -164,6 +160,8 @@
       <workItem from="1704433033093" duration="4929000" />
       <workItem from="1704518424553" duration="1007000" />
       <workItem from="1704622143102" duration="325000" />
+      <workItem from="1704622470604" duration="1067000" />
+      <workItem from="1704626854929" duration="13020000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -301,7 +299,47 @@
       <option name="project" value="LOCAL" />
       <updated>1704622381310</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- 동일 객체 vs 동일 값 비교 주석 추가">
+      <option name="closed" value="true" />
+      <created>1704622479365</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622479365</updated>
+    </task>
+    <task id="LOCAL-00019" summary="- 접근제어자 불필요한 샘플코드 삭제">
+      <option name="closed" value="true" />
+      <created>1704622759483</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622759483</updated>
+    </task>
+    <task id="LOCAL-00020" summary="- 인터페이스 &amp; 추상클래스 샘플코드 새로운 버전으로 변경">
+      <option name="closed" value="true" />
+      <created>1704622826555</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622826555</updated>
+    </task>
+    <task id="LOCAL-00021" summary="- 얕은복사 깊은복사 샘플">
+      <option name="closed" value="true" />
+      <created>1704622843255</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622843255</updated>
+    </task>
+    <task id="LOCAL-00022" summary="- Enum 클래스 생성자 오버라이드 형태 사용 방법 샘플코드 추가">
+      <option name="closed" value="true" />
+      <created>1704622894683</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1704622894683</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +374,12 @@
     <MESSAGE value="- 클래스 개념 기초와 객체화 방법 샘플코드 추가" />
     <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가 2" />
     <MESSAGE value="- 간단한 상속 개념 샘플코드 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 간단한 상속 개념 샘플코드 추가" />
+    <MESSAGE value="- 동일 객체 vs 동일 값 비교 주석 추가" />
+    <MESSAGE value="- 접근제어자 불필요한 샘플코드 삭제" />
+    <MESSAGE value="- 인터페이스 &amp; 추상클래스 샘플코드 새로운 버전으로 변경" />
+    <MESSAGE value="- 얕은복사 깊은복사 샘플" />
+    <MESSAGE value="- Enum 클래스 생성자 오버라이드 형태 사용 방법 샘플코드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Enum 클래스 생성자 오버라이드 형태 사용 방법 샘플코드 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
