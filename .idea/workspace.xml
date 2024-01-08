@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 샘플 코드 추가 (1)">
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample/AbstractGameCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample/CarGameSimulatorMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample/GameCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample/MovementControllable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample/SpecControllable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/AbstractGameCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/AbstractUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/CarGameSimulatorMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/GameCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/IMovementControllable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/ISpecModifiable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/PaidUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firstweekexercise/cargamesample2/UnpaidUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mathclasstest/MathClassSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objectclassoverride/ObjectClassOverrideSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/throwingexceptions/SimpleTryCatchSample.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정">
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/dependencyinversion/DipAppliedSampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/dependencyinversion/DipNotAppliedSampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/interfacesegregation/IspSampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/interfacesegregation/IspViolationSampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/liskovsubstitution/LspSampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/openclose/ShapeSampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/singleresponsibility/NonSrpUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solidprinciple/singleresponsibility/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/throwingexceptions/ThrowingRuntimeExceptionSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/throwingexceptions/ThrowingRuntimeExceptionSample.java" afterDir="false" />
     </list>
@@ -172,7 +164,7 @@
       <workItem from="1704518424553" duration="1007000" />
       <workItem from="1704622143102" duration="325000" />
       <workItem from="1704622470604" duration="1067000" />
-      <workItem from="1704626854929" duration="34470000" />
+      <workItem from="1704626854929" duration="39766000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -358,7 +350,47 @@
       <option name="project" value="LOCAL" />
       <updated>1704646006362</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1/8주 강의 샘플 코드 추가 (2)&#10;- 자동차 게임 예시코드 추가">
+      <option name="closed" value="true" />
+      <created>1704731605645</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1704731605645</updated>
+    </task>
+    <task id="LOCAL-00025" summary="1/8주 강의 샘플 코드 추가 (3)&#10;- Math 클래스 예시코드 추가">
+      <option name="closed" value="true" />
+      <created>1704731628499</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1704731628499</updated>
+    </task>
+    <task id="LOCAL-00026" summary="1/8주 강의 샘플 코드 추가 (3)&#10;- Object 클래스 샘플 코드 추가">
+      <option name="closed" value="true" />
+      <created>1704731647612</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1704731647612</updated>
+    </task>
+    <task id="LOCAL-00027" summary="1/8주 강의 샘플 코드 추가 (4)&#10;- 예외처리 샘플코드 추가">
+      <option name="closed" value="true" />
+      <created>1704731673297</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1704731673297</updated>
+    </task>
+    <task id="LOCAL-00028" summary="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정">
+      <option name="closed" value="true" />
+      <created>1704731748566</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1704731748566</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,9 +408,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플" />
-    <MESSAGE value="- Exception 샘플" />
-    <MESSAGE value="- Exception 샘플 수정" />
     <MESSAGE value="- 상속 샘플 추가&#10;- 어노테이션 샘플 추가" />
     <MESSAGE value="- 어노테이션 샘플 수정" />
     <MESSAGE value="- 중첩 클래스 샘플 추가" />
@@ -399,7 +428,12 @@
     <MESSAGE value="- 얕은복사 깊은복사 샘플" />
     <MESSAGE value="- Enum 클래스 생성자 오버라이드 형태 사용 방법 샘플코드 추가" />
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 샘플 코드 추가 (1)" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (2)&#10;- 자동차 게임 예시코드 추가" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (3)&#10;- Math 클래스 예시코드 추가" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (3)&#10;- Object 클래스 샘플 코드 추가" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (4)&#10;- 예외처리 샘플코드 추가" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
