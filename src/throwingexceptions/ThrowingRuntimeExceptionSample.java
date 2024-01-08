@@ -28,7 +28,7 @@ public class ThrowingRuntimeExceptionSample {
                 // validateAge(-1);
 
                 // Example 7: UnsupportedOperationException
-                // throwUnsupportedOperationException();
+                throwUnsupportedOperationException(1, "a", "plus");
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -42,8 +42,10 @@ public class ThrowingRuntimeExceptionSample {
             System.out.println("Valid age: " + age);
         }
 
-        private static void throwUnsupportedOperationException() {
-            // 규칙에 벗어난 경우 상황에 맞는 메시지 전달
-            throw new UnsupportedOperationException("이 연산은 OOO 규칙에 위배됨.");
+        private static void throwUnsupportedOperationException(int a, String b, String operation) {
+            if (operation.equals("plus")) {
+                // 규칙에 벗어난 경우 상황에 맞는 메시지 전달
+                throw new UnsupportedOperationException("이 연산은 문자와 숫자 덧셈 연산 금지 규칙에 위배됨.");
+            }
         }
     }
