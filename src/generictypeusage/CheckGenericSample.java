@@ -90,6 +90,7 @@ public class CheckGenericSample {
     }
 
     public static void checkGeneric() {
+//        GenericDTO<Integer, Float, Double> threeTypeGeneric = new GenericDTO<>();
         System.out.println("----------------------- Generic DTO-----------------------");
         GenericDTO<Integer> genericDto1 = new GenericDTO<>();
         genericDto1.setObject(1);
