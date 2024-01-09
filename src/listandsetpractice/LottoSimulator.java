@@ -1,4 +1,4 @@
-package linkedlistpractice;
+package listandsetpractice;
 
 import java.util.*;
 
