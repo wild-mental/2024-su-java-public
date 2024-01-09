@@ -5,7 +5,7 @@ public class A {
     public A() {
         System.out.println(this.classAinstanceName +" 생성됨");
     }
-    // 정적 블록
+    // 정적 블록 (정적 블록은 사용이 권장되지는 않음)
     static {  // 중첩 정적 클래스 접근 및 StaticB 타입 객체 생성
         staticB = new StaticB();
     }
