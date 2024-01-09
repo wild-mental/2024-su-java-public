@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정">
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/dependencyinversion/DipAppliedSampleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/dependencyinversion/DipNotAppliedSampleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/interfacesegregation/IspSampleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/interfacesegregation/IspViolationSampleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/liskovsubstitution/LspSampleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/openclose/ShapeSampleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/singleresponsibility/NonSrpUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solidprinciple/singleresponsibility/User.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 샘플 코드 추가 (8)&#10;- 수업 중 막혔던 Collection 초기 크기 지정방법 코드 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/throwingexceptions/ThrowingRuntimeExceptionSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/throwingexceptions/ThrowingRuntimeExceptionSample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +68,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -164,7 +155,7 @@
       <workItem from="1704518424553" duration="1007000" />
       <workItem from="1704622143102" duration="325000" />
       <workItem from="1704622470604" duration="1067000" />
-      <workItem from="1704626854929" duration="39766000" />
+      <workItem from="1704626854929" duration="58350000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -390,7 +381,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704731748566</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="1/8주 강의 샘플 코드 추가 (6)&#10;- SOLID 원칙 예제코드 추가">
+      <option name="closed" value="true" />
+      <created>1704736349965</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1704736349965</updated>
+    </task>
+    <task id="LOCAL-00030" summary="1/8주 강의 샘플 코드 추가 (7)&#10;- 수업 중 Generic 관련 기능 확인용 코드 추가">
+      <option name="closed" value="true" />
+      <created>1704807813567</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1704807813567</updated>
+    </task>
+    <task id="LOCAL-00031" summary="1/8주 강의 샘플 코드 추가 (8)&#10;- 수업 중 막혔던 Collection 초기 크기 지정방법 코드 추가">
+      <option name="closed" value="true" />
+      <created>1704807890060</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1704807890060</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,9 +423,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- 상속 샘플 추가&#10;- 어노테이션 샘플 추가" />
-    <MESSAGE value="- 어노테이션 샘플 수정" />
-    <MESSAGE value="- 중첩 클래스 샘플 추가" />
     <MESSAGE value="- 스트링 클래스 샘플 추가&#10;- Log4J 샘플 추가 및 config 개선" />
     <MESSAGE value="- gitignore 추가" />
     <MESSAGE value="- 멀티스레딩 샘플 추가&#10;- 동시성 제어 샘플 추가" />
@@ -433,7 +445,21 @@
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (3)&#10;- Object 클래스 샘플 코드 추가" />
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (4)&#10;- 예외처리 샘플코드 추가" />
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 샘플 코드 추가 (5)&#10;- 런타임 예외 샘플코드 수정" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (6)&#10;- SOLID 원칙 예제코드 추가" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (7)&#10;- 수업 중 Generic 관련 기능 확인용 코드 추가" />
+    <MESSAGE value="1/8주 강의 샘플 코드 추가 (8)&#10;- 수업 중 막혔던 Collection 초기 크기 지정방법 코드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 샘플 코드 추가 (8)&#10;- 수업 중 막혔던 Collection 초기 크기 지정방법 코드 추가" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/generictypeusage/CheckGenericSample.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
