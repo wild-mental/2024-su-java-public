@@ -12,7 +12,7 @@ public class A {
     // 정적 멤버 (필드 및 클래스)
     public static class StaticB {  // 중첩 정적 멤버 클래스 StaticB 선언
         // 생성자
-        StaticB(){
+        private StaticB(){
             this.staticBinstanceName =  name+"의 객체";
             System.out.println(this.staticBinstanceName +" 생성됨");
         }
