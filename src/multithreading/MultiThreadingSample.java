@@ -8,7 +8,9 @@ public class MultiThreadingSample {
         int delayTime = 10;
         Toolkit tk = Toolkit.getDefaultToolkit();
         // beepThread 선언
-        Thread beepThread = new Thread() {  // Thread 클래스를 인라인으로 재정의한 익명클래스의 객체를 생성한다
+        // (1) 익명 자식객체를 구현하는 Thread 생성 방식
+        // Thread 클래스를 인라인으로 재정의한 익명클래스의 객체를 생성한다.
+        Thread beepThread = new Thread() {
             @Override
             public void run () {
 //                long startTime = System.currentTimeMillis();
@@ -22,7 +24,9 @@ public class MultiThreadingSample {
             }
         };
         // printThread 선언
-        Thread printThread = new Thread(() -> {  // Runnable 인터페이스를 인라인으로 재정의한 익명 구현 클래스의 객체를 생성하고 Thread의 생성자에 전달한다.
+        // (2) 람다식을 사용한 익명 구현객체를 Thread 생성자에 전달하는 방식
+        // 람다 표현식으로 익명 구현 클래스의 객체를 생성해 Runnable 인터페이스를 받는 Thread 클래스의 생성자에 전달한다.
+        Thread printThread = new Thread(() -> {
 //            long startTime = System.currentTimeMillis();
             for (int i=0; i<reps; i++) {
                 System.out.println("Beep"+i);
@@ -31,8 +35,9 @@ public class MultiThreadingSample {
             }
 //            long elapsedTime = System.currentTimeMillis() - startTime;
 //            System.out.println("printing elapsed time: "+elapsedTime+"ms");
-        }
-        );
+        });
+        //
+//        beepThread.setDaemon(true);
 //        printThread.setDaemon(true);
 
         // 두 스레드 실행
@@ -53,7 +58,7 @@ public class MultiThreadingSample {
         @Override
         public void run() {
             long startTime = System.currentTimeMillis();
-                super.run();
+            super.run();
             long elapsedTime = System.currentTimeMillis() - startTime;
             System.out.println(this.getName()+" done at elapsed time:"+elapsedTime+"ms");
         }

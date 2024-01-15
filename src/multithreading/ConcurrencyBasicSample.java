@@ -90,8 +90,8 @@ public class ConcurrencyBasicSample {
         // 1) ArrayList 동시 접근 중 일부 접근이 실패함
         // 2) ArrayList 에 대한 작업 순서가 보장 안됨
         // 3) Vector 동시 접근은 Sync 를 통해 순차 처리 되지만, 공유 변수 동시 접근은 순차 처리가 안됨
-//        Thread t1 = new Thread(runnable);
-//        Thread t2 = new Thread(runnable);
+        Thread t1 = new Thread(runnable);
+        Thread t2 = new Thread(runnable);
         // Synced Runnable (wrong case 2)
         // 싱크 된 것으로 착각할 수 있지만, 스레드 별로 다른 Runnable 객체가 생성 및 전달됨 -> 각 객체가 Sync 기준이 됨
 //        Thread t1 = new Thread(new MethodSyncedRunnable());
@@ -113,8 +113,8 @@ public class ConcurrencyBasicSample {
 //        Thread t1 = new Thread(new BlockSyncedRunnable());
 //        Thread t2 = new Thread(new BlockSyncedRunnable());
         // Synced lambda (right case 4 - best) : 최소 블록 단위 람다 메서드 싱크
-        Thread t1 = new Thread(syncedRunnable);
-        Thread t2 = new Thread(syncedRunnable);
+//        Thread t1 = new Thread(syncedRunnable);
+//        Thread t2 = new Thread(syncedRunnable);
 
         t1.start();
         t2.start();
