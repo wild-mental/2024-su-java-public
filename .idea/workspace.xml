@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 샘플 코드 추가 (10)&#10;- 중첩클래스 예시코드에 singlton 패턴 private 키워드 누락 보완">
-      <change afterPath="$PROJECT_DIR$/src/TryWithResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemonStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonBattleStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simpleinherit/SimpleInheritConstructorTestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stringandlogging/StringSplit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lombok.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법">
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/IFlyable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/ISurfable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotations/LombokUsageSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/annotations/LombokUsageSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enumwithcreator/EnumUseSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumwithcreator/EnumUseSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multithreading/ConcurrencyBasicSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multithreading/ConcurrencyBasicSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multithreading/MultiThreadingSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multithreading/MultiThreadingSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -176,7 +167,7 @@
       <workItem from="1704809272334" duration="20812000" />
       <workItem from="1704907286369" duration="25335000" />
       <workItem from="1705280763905" duration="14703000" />
-      <workItem from="1705300641838" duration="1359000" />
+      <workItem from="1705300641838" duration="6625000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -466,7 +457,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704950648288</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="1/15주 강의 코드 추가 Pokemon 이종 모음 배열 &amp; 이종 모음 Map 자료형 까지">
+      <option name="closed" value="true" />
+      <created>1705302969892</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1705302969892</updated>
+    </task>
+    <task id="LOCAL-00038" summary="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법">
+      <option name="closed" value="true" />
+      <created>1705303038266</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1705303038266</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,8 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[1/3 수업 진행 내용 추가]&#10;- Java 문법 기본 요소&#10;- 클래스의 구조와 객체화&#10;- 제어문" />
-    <MESSAGE value="[1/4 수업 진행 예비 내용]&#10;- 참조 자료형(String)의 동일 객체 동일 값 비교" />
     <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가" />
     <MESSAGE value="- 클래스 개념 기초와 객체화 방법 샘플코드 추가" />
     <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가 2" />
@@ -509,7 +514,9 @@
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (9)&#10;- 로또 추첨 실습 패키지명 수정" />
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (10)&#10;- 멀티스레딩 예시코드 수정 및 보강" />
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (10)&#10;- 중첩클래스 예시코드에 singlton 패턴 private 키워드 누락 보완" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 샘플 코드 추가 (10)&#10;- 중첩클래스 예시코드에 singlton 패턴 private 키워드 누락 보완" />
+    <MESSAGE value="1/15주 강의 코드 추가 Pokemon 이종 모음 배열 &amp; 이종 모음 Map 자료형 까지" />
+    <MESSAGE value="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

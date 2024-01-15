@@ -1,6 +1,6 @@
 package pokemoncharactergame;
 
-public class EvolvedPokemon {
+public class EvolvedPokemon implements IContinentCrossable {
     private String monsterName;
     private int hp;
     private int maxHp;
@@ -8,6 +8,9 @@ public class EvolvedPokemon {
     private int skill1Dmg;
     private String skill2Name;
     private int skill2Dmg;
+    private boolean surfable;
+    private boolean flyable;
+    private boolean continentCrossable;
 
     public EvolvedPokemon(String monsterName, int maxHp,
                           String skill1Name, int skill1Dmg,
@@ -74,5 +77,56 @@ public class EvolvedPokemon {
 
     public void setSkill2Dmg(int skill2Dmg) {
         this.skill2Dmg = skill2Dmg;
+    }
+
+    public boolean isSurfable() {
+        return surfable;
+    }
+
+    public void setSurfable(boolean surfable) {
+        this.surfable = surfable;
+        if (this.surfable || this.flyable) {
+            this.continentCrossable = true;
+        } else {
+            this.continentCrossable = false;
+        }
+    }
+
+    public boolean isFlyable() {
+        return flyable;
+    }
+
+    public void setFlyable(boolean flyable) {
+        this.flyable = flyable;
+        if (this.flyable || this.surfable) {
+            this.continentCrossable = true;
+        } else {
+            this.continentCrossable = false;
+        }
+    }
+
+    @Override
+    public void surf() {
+        if (this.surfable) {
+            System.out.println(this.monsterName+"(이)가 서핑으로 바다를 건넙니다.");
+        } else {
+            System.out.println(this.monsterName+ "(은)는 서핑을 하지 못합니다..");
+        }
+    }
+
+    @Override
+    public void fly() {
+        if (this.flyable) {
+            System.out.println(this.monsterName+"(이)가 날아서 바다를 건넙니다.");
+        } else {
+            System.out.println(this.monsterName+ "(은)는 하늘을 날지 못합니다..");
+        }
+    }
+
+    public void crossContinent() {
+        if (this.continentCrossable) {
+            if (this.flyable) fly();
+            else surf();
+        }
     }
 }

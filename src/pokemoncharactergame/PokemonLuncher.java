@@ -67,7 +67,6 @@ public class PokemonLuncher {
                 ppippiArray[i] = new PokemonStruct("Ppippi","삐삐"+i, 100, "손가락 흔들기", 0).evolve();
                 purinArray[i] = new PokemonStruct("Purin", "푸린"+i, 100, "노래부르기", 0).evolve();
             }
-            //            ppippiArray[i] = new PokemonStruct("푸린"+i, 100, "노래부르기", 0);
         }  // 클래스가 적용된 자체로 인해서 여러 종류 포켓몬은 기본적으로 같이 다룰 수가 있다.
         // 이종 모음 배열 준비 완료
 
@@ -107,7 +106,20 @@ public class PokemonLuncher {
         }
         System.out.println(Arrays.toString(evolvedPpippiArray));
 
+//        unibugiNoInherit.fly();
+//        unibugiNoInherit.surf();
+//        unibugiNoInherit.setSurfable(true);
+//        unibugiNoInherit.crossContinent();
+//        unibugiNoInherit.setFlyable(true);
+//        unibugiNoInherit.crossContinent();
+
+
     }
+
+    public static void trainerCrossContinent() {
+        IContinentCrossable[] crossables = new IContinentCrossable[10];
+    }
+
     // 구조체를 사물 단위로 묶어서 동작과 함께 다루면 어떨까? => 클래스의 개념이 정립됨.
     public static void pokemonObjectUnitBattle (PokemonStruct pokemon1, PokemonStruct pokemon2){
         while (pokemon1.getHp() >= 0 && pokemon2.getHp() >= 0) {
