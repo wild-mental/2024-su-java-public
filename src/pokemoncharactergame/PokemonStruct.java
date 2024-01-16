@@ -51,7 +51,7 @@ public class PokemonStruct {
         this.hp = maxHp;
         this.skill1Name = skill1Name;
         this.skill1Dmg = skill1Dmg;
-    };
+    }
 
     public PokemonStruct(String monsterName, String nickName, int maxHp, String skill1Name, int skill1Dmg) {
         this.monsterName = monsterName;
@@ -146,12 +146,27 @@ public class PokemonStruct {
 
         int newMaxHp = targetEvolveResult.getMaxHp();
         String skill2Name = targetEvolveResult.getSkill2Name();
-        int skil2Dmg = targetEvolveResult.getSkill1Dmg();
+        int skill2Dmg = targetEvolveResult.getSkill2Dmg();
         return new EvolvedPokemonStruct(
                 newMonsterName, this.nickName, newMaxHp,
                 this.skill1Name, this.skill1Dmg,
-                skill2Name, skil2Dmg
+                skill2Name, skill2Dmg
         );
+    }
+
+    public static PokemonStruct[] groupEvolve(PokemonStruct[] beforeEvolveArray) {
+        PokemonStruct[] afterEvolveArray = new PokemonStruct[10];  // 유연하게 배열 길이를 다룰 수 있게 바꾸어 보기
+        int count = 0;
+        for (PokemonStruct evolvedOrNot : beforeEvolveArray) {
+            if (PokemonStruct.pokeEvolveDex.get(evolvedOrNot.getMonsterName()) == null) {
+                afterEvolveArray[count] = evolvedOrNot;
+            } else {
+                afterEvolveArray[count] = evolvedOrNot.evolve();
+            }
+            System.out.println(afterEvolveArray[count]);
+            count++;
+        }
+        return afterEvolveArray;
     }
 
 //    public String getSkill2Name() {
