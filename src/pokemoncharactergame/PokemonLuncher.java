@@ -72,52 +72,81 @@ public class PokemonLuncher {
 
         // 포켓몬 도감 사용하기 (Map 자료형 만들고 이종 데이터 값을 가져오기)
         // toString 이 적절하게 오버라이드 된 상속 클래스 만들기
-        PokemonStruct pikachuInDogam = PokemonStruct.pokeDex.get("Pikachu");
+//        PokemonStruct pikachuInDogam = PokemonStruct.pokeDex.get("Pikachu");
 //        System.out.println(PokemonStruct.pokeDex.get("Pikachu"));
 //        System.out.println(PokemonStruct.pokeDex.get("Unibugi"));
 //        System.out.println(PokemonStruct.pokeDex.get("Ppippi"));
 //        System.out.println(PokemonStruct.pokeDex.get("Purin"));
 
         // 진화 도감에서 데이터를 조회해 보자
-        String evolveName = PokemonStruct.pokeEvolveDex.get(pikachuInDogam.getMonsterName());
-        System.out.println(evolveName);
-
-        System.out.println(PokemonStruct.pokeEvolveDex.get("Purin"));
-        System.out.println(PokemonStruct.pokeEvolveDex.get("Ppippi"));
-
-        String evolvedFormName = PokemonStruct.pokeEvolveDex.get("Purin");
-        PokemonStruct evolvedInfoObj = PokemonStruct.pokeDex.get(evolvedFormName);
-        System.out.println(evolvedInfoObj);
-
-
-        System.out.println(Arrays.toString(ppippiArray));
+//        String evolveName = PokemonStruct.pokeEvolveDex.get(pikachuInDogam.getMonsterName());
+//        System.out.println(evolveName);
+//
+//        System.out.println(PokemonStruct.pokeEvolveDex.get("Purin"));
+//        System.out.println(PokemonStruct.pokeEvolveDex.get("Ppippi"));
+//
+//        String evolvedFormName = PokemonStruct.pokeEvolveDex.get("Purin");
+//        PokemonStruct evolvedInfoObj = PokemonStruct.pokeDex.get(evolvedFormName);
+//        System.out.println(evolvedInfoObj);
+//
+//
+//        System.out.println(Arrays.toString(ppippiArray));
         // 이종 타입을 모두 포함하는 배열
         // 이미 진화를 마친 삐삐와 푸린 (픽시, 푸크린) -> 섞여 있으면 어떻게하지?
-        PokemonStruct[] evolvedPpippiArray = new PokemonStruct[10];
-        int count = 0;
-        for (PokemonStruct ppippiOrPixy : ppippiArray) {
-            if (PokemonStruct.pokeEvolveDex.get(ppippiOrPixy.getMonsterName()) == null) {
-                evolvedPpippiArray[count] = ppippiOrPixy;
-            } else {
-                evolvedPpippiArray[count] = ppippiOrPixy.evolve();
-            }
-            System.out.println(evolvedPpippiArray[count]);
-            count++;
-        }
-        System.out.println(Arrays.toString(evolvedPpippiArray));
+//        PokemonStruct[] evolvedPpippiArray = new PokemonStruct[10];
+//        int count = 0;
+//        for (PokemonStruct ppippiOrPixy : ppippiArray) {
+//            if (PokemonStruct.pokeEvolveDex.get(ppippiOrPixy.getMonsterName()) == null) {
+//                evolvedPpippiArray[count] = ppippiOrPixy;
+//            } else {
+//                evolvedPpippiArray[count] = ppippiOrPixy.evolve();
+//            }
+//            System.out.println(evolvedPpippiArray[count]);
+//            count++;
+//        }
+//        System.out.println(Arrays.toString(evolvedPpippiArray));
 
-//        unibugiNoInherit.fly();
-//        unibugiNoInherit.surf();
-//        unibugiNoInherit.setSurfable(true);
-//        unibugiNoInherit.crossContinent();
-//        unibugiNoInherit.setFlyable(true);
-//        unibugiNoInherit.crossContinent();
+//        PokemonStruct.groupEvolve(ppippiArray);
+//        PokemonStruct.groupEvolve(purinArray);
 
+        EvolvedFlyablePokemon flyablePokemon = new EvolvedFlyablePokemon(
+                "Pigeon", "myPigeon", 300,
+                "날개치기", 50,
+                "전광석화", 100
+        );
+//        flyablePokemon.fly();
 
-    }
+        EvolvedSurfablePokemon surfablePokemon = new EvolvedSurfablePokemon(
+                "Lapras", "myLapras", 300,
+                "물대포", 50,
+                "등딱지에 숨기", 0
+        );
+//        surfablePokemon.surf();
 
-    public static void trainerCrossContinent() {
-        IContinentCrossable[] crossables = new IContinentCrossable[10];
+        EvolvedPokemonStruct randomPokemon = new EvolvedPokemonStruct(
+                "LaprasMutant", "myLaprasMutant", 300,
+                "물대포", 50,
+                "등딱지에 숨기", 0
+        );
+
+//        randomPokemon.crossOcean();
+//        EvolvedPokemonStruct.crossOceanOptions(randomPokemon);
+//        EvolvedPokemonStruct.crossOceanOptions(surfablePokemon);
+//        EvolvedPokemonStruct.crossOceanOptions(flyablePokemon);
+
+//        EvolvedPokemonStruct.crossOcean2(surfablePokemon);
+//        EvolvedPokemonStruct.crossOcean2(flyablePokemon);
+
+        // 싱긅톤으로 선언된 전설의 포켓몬이 중복 생성되는 것은 막을 수 있지만, 중복 참조되는 것은 막지 못한 모습
+        // 중복 참조까지 막을 수 있는 방법이 필요함.
+        LegendaryPokemon lugiaEncounterd = LegendaryPokemon.getLugia();
+//        System.out.println(lugiaEncounterd);
+//        LegendaryPokemon lugiaObtained = LegendaryPokemon.getLugia();
+        LegendaryPokemon lugiaObtained = LegendaryPokemon.getDuplicateLugia();
+//        System.out.println(lugiaObtained);
+
+        PokemonStruct.pokemonObjectUnitBattle(lugiaObtained, lugiaEncounterd);
+
     }
 
     // 구조체를 사물 단위로 묶어서 동작과 함께 다루면 어떨까? => 클래스의 개념이 정립됨.

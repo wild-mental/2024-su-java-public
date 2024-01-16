@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법">
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/IFlyable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/ISurfable.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/15주 강의 코드 추가&#10;- 단체진화 encapsulation&#10;- skill1 -&gt; 2 참조 오타 수정">
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedFlyablePokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedSurfablePokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/ICrossable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/LegendaryPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemonStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemonStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/IContinentCrossable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/IContinentCrossable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/IFlyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/IFlyable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/ISurfable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/ISurfable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonStruct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -167,7 +174,7 @@
       <workItem from="1704809272334" duration="20812000" />
       <workItem from="1704907286369" duration="25335000" />
       <workItem from="1705280763905" duration="14703000" />
-      <workItem from="1705300641838" duration="6625000" />
+      <workItem from="1705300641838" duration="21779000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -473,7 +480,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705303038266</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="1/15주 강의 준비 코드 추가&#10;- 인터페이스 다형성을 위한 Interface 및 형제 클래스 세팅">
+      <option name="closed" value="true" />
+      <created>1705327864375</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1705327864375</updated>
+    </task>
+    <task id="LOCAL-00040" summary="1/15주 강의 코드 추가&#10;- 단체진화 encapsulation&#10;- skill1 -&gt; 2 참조 오타 수정">
+      <option name="closed" value="true" />
+      <created>1705367077070</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1705367077070</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,8 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가" />
-    <MESSAGE value="- 클래스 개념 기초와 객체화 방법 샘플코드 추가" />
     <MESSAGE value="- 기본자료형과 참조자료형 코드샘플 추가 2" />
     <MESSAGE value="- 간단한 상속 개념 샘플코드 추가" />
     <MESSAGE value="- 동일 객체 vs 동일 값 비교 주석 추가" />
@@ -516,7 +537,9 @@
     <MESSAGE value="1/8주 강의 샘플 코드 추가 (10)&#10;- 중첩클래스 예시코드에 singlton 패턴 private 키워드 누락 보완" />
     <MESSAGE value="1/15주 강의 코드 추가 Pokemon 이종 모음 배열 &amp; 이종 모음 Map 자료형 까지" />
     <MESSAGE value="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/8주 강의 코드 추가 (11)&#10;- lombok, StringSplit, Try with Resource, multithreading 및 동시성 sync 처리 추가 수정, Enum 사용법" />
+    <MESSAGE value="1/15주 강의 준비 코드 추가&#10;- 인터페이스 다형성을 위한 Interface 및 형제 클래스 세팅" />
+    <MESSAGE value="1/15주 강의 코드 추가&#10;- 단체진화 encapsulation&#10;- skill1 -&gt; 2 참조 오타 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/15주 강의 코드 추가&#10;- 단체진화 encapsulation&#10;- skill1 -&gt; 2 참조 오타 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

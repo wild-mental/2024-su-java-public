@@ -1,6 +1,6 @@
 package pokemoncharactergame;
 
-public class EvolvedPokemon implements IContinentCrossable {
+public class EvolvedPokemon {
     private String monsterName;
     private int hp;
     private int maxHp;
@@ -105,7 +105,6 @@ public class EvolvedPokemon implements IContinentCrossable {
         }
     }
 
-    @Override
     public void surf() {
         if (this.surfable) {
             System.out.println(this.monsterName+"(이)가 서핑으로 바다를 건넙니다.");
@@ -114,7 +113,6 @@ public class EvolvedPokemon implements IContinentCrossable {
         }
     }
 
-    @Override
     public void fly() {
         if (this.flyable) {
             System.out.println(this.monsterName+"(이)가 날아서 바다를 건넙니다.");

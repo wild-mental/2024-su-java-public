@@ -51,4 +51,30 @@ public class EvolvedPokemonStruct extends PokemonStruct{  // is a 관계를 밝�
     public void setSkill2Dmg(int skill2Dmg) {
         this.skill2Dmg = skill2Dmg;
     }
+
+//    public void crossOcean() {
+//        if (this instanceof EvolvedSurfablePokemon) {
+//            ((EvolvedSurfablePokemon) this).surf();
+//        } else if (this instanceof EvolvedFlyablePokemon) {
+//            ((EvolvedFlyablePokemon) this).fly();
+//        } else {
+//            System.out.println(this.getNickName() +"(은)는 바다를 건널 수 없습니다.");
+//        }
+//    }
+
+    public static void crossOcean2(ICrossable crossablePokemon) {
+        // 인터페이스 추상화 : 동작의 이름을 합의하는 과정임
+        crossablePokemon.crossOcean();
+    }
+
+    public static void crossOceanOptions(EvolvedPokemonStruct pokemon) {
+        // 객체의 다형성을 가지고 여러가지 수단을 통해 달성될 수 있는 한가지 기능을 처리하는 방법
+        if (pokemon instanceof EvolvedSurfablePokemon) {
+            ((EvolvedSurfablePokemon) pokemon).surf();
+        } else if (pokemon instanceof EvolvedFlyablePokemon) {
+            ((EvolvedFlyablePokemon) pokemon).fly();
+        } else {
+            System.out.println(pokemon.getNickName() +"(은)는 바다를 건널 수 없습니다.");
+        }
+    }
 }

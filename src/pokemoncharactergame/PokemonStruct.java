@@ -132,6 +132,14 @@ public class PokemonStruct {
         this.skill1Dmg = skill1Dmg;
     }
 
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
     public EvolvedPokemonStruct evolve() {
         // 진화 전 : 진화 후  // key-value 쌍으로 된 데이터
 //        this.monsterName;
@@ -152,6 +160,16 @@ public class PokemonStruct {
                 this.skill1Name, this.skill1Dmg,
                 skill2Name, skill2Dmg
         );
+    }
+
+    public static void pokemonObjectUnitBattle (PokemonStruct pokemon1, PokemonStruct pokemon2){
+        while (pokemon1.getHp() > 0 && pokemon2.getHp() > 0) {
+            // 테스트 코드 (HP를 조절해보자)
+            pokemon1.attack(pokemon2);
+            if (pokemon2.getHp()>0) {
+                pokemon2.attack(pokemon1);
+            }
+        }
     }
 
     public static PokemonStruct[] groupEvolve(PokemonStruct[] beforeEvolveArray) {
