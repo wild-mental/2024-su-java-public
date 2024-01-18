@@ -1,6 +1,6 @@
 package pokemoncharactergame;
 
-public class EvolvedPokemonStruct extends PokemonStruct{  // is a 관계를 밝혀준다.
+public class EvolvedPokemonStruct extends PokemonStruct {  // is a 관계를 밝혀준다.
     private String skill2Name;
     private int skill2Dmg;
 
@@ -22,10 +22,11 @@ public class EvolvedPokemonStruct extends PokemonStruct{  // is a 관계를 밝�
         this.skill2Dmg = skill2Dmg;
     }
 
-    public EvolvedPokemonStruct pokemonStructEvolve(PokemonStruct beforeEvolution) {
-        EvolvedPokemonStruct afterEvolution = beforeEvolution.evolve();
-        return afterEvolution;
-    }
+    // 진화 후의 클래스에 위치하면 부적절함 => 여기를 거치지 않고 PokemonStructObj.evolve() 를 직접 사용할 수 있음
+//    public EvolvedPokemonStruct pokemonStructEvolve(PokemonStruct beforeEvolution) {
+//        EvolvedPokemonStruct afterEvolution = beforeEvolution.evolve();
+//        return afterEvolution;
+//    }
 
     @Override
     public String toString() {
@@ -52,6 +53,7 @@ public class EvolvedPokemonStruct extends PokemonStruct{  // is a 관계를 밝�
         this.skill2Dmg = skill2Dmg;
     }
 
+    // 객체 다형성을 일일이 검사해 처리하는 메서드
 //    public void crossOcean() {
 //        if (this instanceof EvolvedSurfablePokemon) {
 //            ((EvolvedSurfablePokemon) this).surf();
@@ -62,11 +64,7 @@ public class EvolvedPokemonStruct extends PokemonStruct{  // is a 관계를 밝�
 //        }
 //    }
 
-    public static void crossOcean2(ICrossable crossablePokemon) {
-        // 인터페이스 추상화 : 동작의 이름을 합의하는 과정임
-        crossablePokemon.crossOcean();
-    }
-
+    // 객체 다형성을 일일이 검사해 처리하는 메서드 2
     public static void crossOceanOptions(EvolvedPokemonStruct pokemon) {
         // 객체의 다형성을 가지고 여러가지 수단을 통해 달성될 수 있는 한가지 기능을 처리하는 방법
         if (pokemon instanceof EvolvedSurfablePokemon) {
@@ -76,5 +74,11 @@ public class EvolvedPokemonStruct extends PokemonStruct{  // is a 관계를 밝�
         } else {
             System.out.println(pokemon.getNickName() +"(은)는 바다를 건널 수 없습니다.");
         }
+    }
+
+    // 인터페이스 다형성을 메서드 파라미터 선언에 효과적으로 사용
+    public static void crossOcean(ICrossable crossablePokemon) {
+        // 인터페이스 추상화 : 동작의 이름을 합의하는 과정임
+        crossablePokemon.crossOcean();
     }
 }

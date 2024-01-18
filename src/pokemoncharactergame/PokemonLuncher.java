@@ -129,24 +129,30 @@ public class PokemonLuncher {
                 "등딱지에 숨기", 0
         );
 
+        System.out.println("### 인터페이스 단순 사용 ----------------------------------------------------");
+        flyablePokemon.crossOcean();
+        surfablePokemon.crossOcean();
 //        randomPokemon.crossOcean();
-//        EvolvedPokemonStruct.crossOceanOptions(randomPokemon);
-//        EvolvedPokemonStruct.crossOceanOptions(surfablePokemon);
-//        EvolvedPokemonStruct.crossOceanOptions(flyablePokemon);
+        System.out.println("### 객체 다형성 사용 ----------------------------------------------------");
+        EvolvedPokemonStruct.crossOceanOptions(flyablePokemon);
+        EvolvedPokemonStruct.crossOceanOptions(surfablePokemon);
+        EvolvedPokemonStruct.crossOceanOptions(randomPokemon);
+        System.out.println("### 인터페이스 다형성 사용----------------------------------------------------");
+        EvolvedPokemonStruct.crossOcean(flyablePokemon);
+        EvolvedPokemonStruct.crossOcean(surfablePokemon);
+//        EvolvedPokemonStruct.crossOcean(randomPokemon);
 
-//        EvolvedPokemonStruct.crossOcean2(surfablePokemon);
-//        EvolvedPokemonStruct.crossOcean2(flyablePokemon);
+
 
         // 싱긅톤으로 선언된 전설의 포켓몬이 중복 생성되는 것은 막을 수 있지만, 중복 참조되는 것은 막지 못한 모습
         // 중복 참조까지 막을 수 있는 방법이 필요함.
-        LegendaryPokemon lugiaEncounterd = LegendaryPokemon.getLugia();
+//        LegendaryPokemon lugiaEncounterd = LegendaryPokemon.getLugia();
 //        System.out.println(lugiaEncounterd);
 //        LegendaryPokemon lugiaObtained = LegendaryPokemon.getLugia();
-        LegendaryPokemon lugiaObtained = LegendaryPokemon.getDuplicateLugia();
+//        LegendaryPokemon lugiaObtained = LegendaryPokemon.getDuplicateLugia();
 //        System.out.println(lugiaObtained);
 
-        PokemonStruct.pokemonObjectUnitBattle(lugiaObtained, lugiaEncounterd);
-
+//        PokemonStruct.pokemonObjectUnitBattle(lugiaObtained, lugiaEncounterd);
     }
 
     // 구조체를 사물 단위로 묶어서 동작과 함께 다루면 어떨까? => 클래스의 개념이 정립됨.

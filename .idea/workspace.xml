@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/15주 강의 코드 추가&#10;- Interface 추상화의 방식 중 자식 객체로 추상화하는 java 안티패턴 코드 추가">
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EarthPokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/FirePokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/GenericPokemonTrainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonTrainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/WaterPokemon.java" afterDir="false" />
+    <list default="true" id="c12bff6a-2013-4af7-8f18-ebed2dda4551" name="Changes" comment="1/15주 강의 코드 추가&#10;- 배열 및 List 활용 방법&#10;- Generic 포켓몬 트레이너 구현하기&#10;- Generic 에 타입 힌트 적용하기">
+      <change afterPath="$PROJECT_DIR$/src/pokemoncharactergame/OceanCrossable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedFlyablePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedFlyablePokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemonStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedPokemonStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedSurfablePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/EvolvedSurfablePokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/IContinentCrossable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/IFlyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/IFlyable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/ISurfable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/ISurfable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemoncharactergame/PokemonLuncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +177,8 @@
       <workItem from="1704907286369" duration="25335000" />
       <workItem from="1705280763905" duration="14703000" />
       <workItem from="1705300641838" duration="21779000" />
-      <workItem from="1705433126412" duration="12383000" />
+      <workItem from="1705433126412" duration="26432000" />
+      <workItem from="1705591566645" duration="1804000" />
     </task>
     <task id="LOCAL-00001" summary="- 접근제한자 샘플&#10;- 추상메서드 및 인터페이스 샘플">
       <option name="closed" value="true" />
@@ -505,7 +508,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705428058468</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="1/15주 강의 코드 추가&#10;- 배열 및 List 활용 방법&#10;- Generic 포켓몬 트레이너 구현하기&#10;- Generic 에 타입 힌트 적용하기">
+      <option name="closed" value="true" />
+      <created>1705499989659</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1705499989659</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- 간단한 상속 개념 샘플코드 추가" />
     <MESSAGE value="- 동일 객체 vs 동일 값 비교 주석 추가" />
     <MESSAGE value="- 접근제어자 불필요한 샘플코드 삭제" />
     <MESSAGE value="- 인터페이스 &amp; 추상클래스 샘플코드 새로운 버전으로 변경" />
@@ -548,7 +558,8 @@
     <MESSAGE value="1/15주 강의 준비 코드 추가&#10;- 인터페이스 다형성을 위한 Interface 및 형제 클래스 세팅" />
     <MESSAGE value="1/15주 강의 코드 추가&#10;- 단체진화 encapsulation&#10;- skill1 -&gt; 2 참조 오타 수정" />
     <MESSAGE value="1/15주 강의 코드 추가&#10;- Interface 추상화의 방식 중 자식 객체로 추상화하는 java 안티패턴 코드 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/15주 강의 코드 추가&#10;- Interface 추상화의 방식 중 자식 객체로 추상화하는 java 안티패턴 코드 추가" />
+    <MESSAGE value="1/15주 강의 코드 추가&#10;- 배열 및 List 활용 방법&#10;- Generic 포켓몬 트레이너 구현하기&#10;- Generic 에 타입 힌트 적용하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/15주 강의 코드 추가&#10;- 배열 및 List 활용 방법&#10;- Generic 포켓몬 트레이너 구현하기&#10;- Generic 에 타입 힌트 적용하기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

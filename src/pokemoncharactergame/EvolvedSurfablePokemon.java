@@ -21,8 +21,10 @@ public class EvolvedSurfablePokemon extends EvolvedPokemonStruct implements ISur
         System.out.println(this.getMonsterName()+" (이)가 서핑으로 바다를 건넙니다.");
     }
 
-    @Override
-    public void crossOcean() {
-        surf();
-    }
+    // ISurfable 에서 이미 아래와 같이 Override 된 default 메서드를 상속받음
+    // 단, `implements ISurfable, ICrossable` 과 같은 형태로 클래스를 선언한 경우 아래 오버라이드를 명시적으로 수행해야 함
+//    @Override
+//    public void crossOcean() {
+//        surf();
+//    }
 }
