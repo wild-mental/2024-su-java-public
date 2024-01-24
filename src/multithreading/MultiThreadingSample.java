@@ -44,10 +44,10 @@ public class MultiThreadingSample {
 //        printThread.start();
 //        beepThread.start();
 
-        // 두 스레드 실행 (with ElapsedTime)
-        boolean isOccupyThread = true;
-        printThreadWithElapsed(reps, delayTime, isOccupyThread);
-        beepThreadWithElapsed(tk, reps, delayTime, isOccupyThread);
+        // 두 스레드 실행 (with or without ElapsedTime)
+        boolean occupyCpuThread = false;  // true/false 바꿔가며 실험해 보기
+        printThreadWithElapsed(reps, delayTime, occupyCpuThread);
+        beepThreadWithElapsed(tk, reps, delayTime, occupyCpuThread);
     }
 
     // Java 스럽게 만들기
