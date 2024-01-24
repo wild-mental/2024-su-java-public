@@ -77,8 +77,8 @@ public class EvolvedPokemonStruct extends PokemonStruct {  // is a 관계를 밝
     }
 
     // 인터페이스 다형성을 메서드 파라미터 선언에 효과적으로 사용
-    public static void crossOcean(ICrossable crossablePokemon) {
+    public static void crossOcean(ICrossable crossablePokemon) {  // Context 에 해당하는 메서드를 호출
         // 인터페이스 추상화 : 동작의 이름을 합의하는 과정임
-        crossablePokemon.crossOcean();
+        crossablePokemon.crossOcean();  // Strategy 에 해당하는 구체적인 동작을 실행
     }
 }
