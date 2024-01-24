@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class ConcurrencyBasicSample {
+public class ConcurrencyAdvancedSample {
     static int sharedVar = 0;  // 스레드 간 공유된 static 메모리 영역의 변수
     static List<Integer> integerArrayList = new ArrayList<>();  // Thread unsafe 메서드 제공..
     static List<Integer> integerVector = new Vector<>();  // Thread safe 메서드 제공!
@@ -55,7 +55,7 @@ public class ConcurrencyBasicSample {
         @Override
         public void run() {
             for (int i = 0; i < 10; i++) {
-                synchronized (ConcurrencyBasicSample.class) {
+                synchronized (ConcurrencyAdvancedSample.class) {
                     sharedVar++;
                     integerArrayList.add(sharedVar);
                     integerVector.add(sharedVar);
@@ -71,7 +71,7 @@ public class ConcurrencyBasicSample {
 
     static Runnable syncedRunnable = () -> {
         for (int i = 0; i < 10; i++) {
-            synchronized (ConcurrencyBasicSample.class) {
+            synchronized (ConcurrencyAdvancedSample.class) {
                 sharedVar++;
                 integerArrayList.add(sharedVar);
             }
