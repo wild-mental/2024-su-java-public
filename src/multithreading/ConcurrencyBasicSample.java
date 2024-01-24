@@ -100,16 +100,20 @@ public class ConcurrencyBasicSample {
         // ========== 맞는 사례 ==========
         // Synced Runnable (right case 1 - okay) : 메서드 단위 객체 싱크
         // 각 스레드 생성 시 같은 Runnable 객체를 할당 -> Sync 기준이 하나의 객체로 통일됨
+        // 하지만 메서드 전체를 싱크 하므로 성능상 비효율 발생함
 //        Runnable syncTogether = new MethodSyncedRunnable();
 //        Thread t1 = new Thread(syncTogether);
 //        Thread t2 = new Thread(syncTogether);
         // Synced Method (right case 2 - good) : 메서드 단위 메서드 싱크
-        // 객체가 아닌 Synced 메서드 자체를 Runnable 로 전달 시, 메서드를 포함하는 클래스가 단일한 Sync 기준이 됨
+        // 객체가 아닌 Synced 메서드 자체를 Runnable 로 전달 시, 메서드를 포함하는 클래스가 단일한 Sync 기준이 됨 (ConcurrencyBasicSample)
+        // 여기에서도 메서드 전체를 싱크 하므로 성능상 비효율 발생함
 //        Thread t1 = new Thread(ConcurrencyBasicSample::syncedRun);
 //        Thread t2 = new Thread(ConcurrencyBasicSample::syncedRun);
         // Synced Runnable (right case 3 - better) : 블록 단위 객체 싱크
-        // 개선된 점 1 : 로직 블록을 작게 쪼개어 Sync 크기를 줄였음
-        // 개선된 점 2 : Runnable 객체가 달라도, 블록 선언 시 명시된 대로 일정한 Sync 기준이 적용됨
+        // 개선된 점 1 : 로직 블록을 작게 쪼개어 Sync 크기를 줄였음 (성능 개선)
+        //             메서드 전체 싱크의 경우보다 Sync 구간이 줄고, 동시 처리 가능 구간이 늘어남
+        // 개선된 점 2 : Runnable 객체가 달라도, 일정한 Sync 기준이 적용됨 (오동작 위험 감소)
+        //             향후 새로운 위치에서 새 객체를 생성하더라도, 의도치 않게 Sync 위반 가능성이 줄어듦
 //        Thread t1 = new Thread(new BlockSyncedRunnable());
 //        Thread t2 = new Thread(new BlockSyncedRunnable());
         // Synced lambda (right case 4 - best) : 최소 블록 단위 람다 메서드 싱크
