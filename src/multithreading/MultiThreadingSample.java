@@ -8,7 +8,7 @@ public class MultiThreadingSample {
         int delayTime = 10;
         Toolkit tk = Toolkit.getDefaultToolkit();
 
-        // 두 스레드 실행 (sleep or occupy )
+        // 두 스레드 실행 (sleep or occupy)
         boolean occupyCpu = true;  // true/false 바꿔가며 실험해 보기
         printThreadWithElapsed(reps, delayTime, occupyCpu);
         beepThreadWithElapsed(tk, reps, delayTime, occupyCpu);
