@@ -2,14 +2,14 @@ package multithreading;
 
 import java.awt.*;
 
-public class MultiThreadingSample {
+public class DelayingStrategySample {
     public static void main(String[] args) {
         int reps = 100;
         int delayTime = 10;
         Toolkit tk = Toolkit.getDefaultToolkit();
 
         // 두 스레드 실행 (sleep or occupy)
-        boolean occupyCpu = true;  // true/false 바꿔가며 실험해 보기
+        boolean occupyCpu = false;  // true/false 바꿔가며 실험해 보기
         printThreadWithElapsed(reps, delayTime, occupyCpu);
         beepThreadWithElapsed(tk, reps, delayTime, occupyCpu);
     }

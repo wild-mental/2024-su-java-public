@@ -1,6 +1,6 @@
 package copilottest;
 
-import multithreading.MultiThreadingSample;
+import multithreading.DelayingStrategySample;
 
 public class CopilotMatchSample {
     CopilotMatchSample() {
@@ -52,7 +52,7 @@ public class CopilotMatchSample {
         long elapsedTime = System.currentTimeMillis() - startTime;
         System.out.println("CopilotMatchSample doSomethingWithElapsed elapsed time: "+elapsedTime+"ms");
         if (isOccupyThread) {
-            MultiThreadingSample.ThreadWithElapsed threadWithElapsed = new MultiThreadingSample.ThreadWithElapsed(() -> {
+            DelayingStrategySample.ThreadWithElapsed threadWithElapsed = new DelayingStrategySample.ThreadWithElapsed(() -> {
                 System.out.println("CopilotMatchSample doSomethingWithElapsed ThreadWithElapsed");
                 try {
                     Thread.sleep(20);
