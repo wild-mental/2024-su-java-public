@@ -107,8 +107,8 @@ public class ConcurrencyAdvancedSample {
         // Synced Method (right case 2 - good) : 메서드 단위 메서드 싱크
         // 객체가 아닌 Synced 메서드 자체를 Runnable 로 전달 시, 메서드를 포함하는 클래스가 단일한 Sync 기준이 됨 (ConcurrencyBasicSample)
         // 여기에서도 메서드 전체를 싱크 하므로 성능상 비효율 발생함
-//        Thread t1 = new Thread(ConcurrencyBasicSample::syncedRun);
-//        Thread t2 = new Thread(ConcurrencyBasicSample::syncedRun);
+//        Thread t1 = new Thread(ConcurrencyAdvancedSample::syncedRun);
+//        Thread t2 = new Thread(ConcurrencyAdvancedSample::syncedRun);
         // Synced Runnable (right case 3 - better) : 블록 단위 객체 싱크
         // 개선된 점 1 : 로직 블록을 작게 쪼개어 Sync 크기를 줄였음 (성능 개선)
         //             메서드 전체 싱크의 경우보다 Sync 구간이 줄고, 동시 처리 가능 구간이 늘어남
