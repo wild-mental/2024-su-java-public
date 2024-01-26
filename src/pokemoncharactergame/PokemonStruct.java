@@ -3,9 +3,6 @@ package pokemoncharactergame;
 import java.util.HashMap;
 import java.util.Map;
 
-import static java.lang.Math.random;
-import static java.lang.Math.round;
-
 public class PokemonStruct {
 
     public static final Map<String, PokemonStruct> pokeDex = new HashMap<>();
@@ -16,19 +13,24 @@ public class PokemonStruct {
         pokeDex.put("Kkoret", new PokemonStruct("kkoret", 40 ,"깨물기", 10));
         pokeDex.put("Ppippi", new PokemonStruct("Ppippi", 100, "손가락 흔들기", 0));
         pokeDex.put("Purin", new PokemonStruct("Purin", 100, "노래부르기", 0));
-        pokeDex.put("Unibugi", new EvolvedPokemonStruct("어니부기", 120, "물대포", 15, "거품광선", 30));
-        pokeDex.put("Pixy", new EvolvedPokemonStruct("Pixy", 200, "손가락 흔들기", 0, "최면 광선", 20));
-        pokeDex.put("Pukrin", new EvolvedPokemonStruct("Pukrin", 200, "노래부르기", 0, "낙서", 100));
-        // 포켓몬 교환 시 일정 확률로 진화하는 몬스터
-        pokeDex.put("근육몬", new PokemonStruct("근육몬", 1000, "4연속 펀치", 200));
-        pokeDex.put("괴력몬", new EvolvedPokemonStruct("괴력몬", 3_000, "4연속 펀치", 200, "6연속 펀치", 500));
+        pokeDex.put("Unibugi", new EvolvedPokemonStruct(
+                "어니부기", 120,
+                "물대포", 15,
+                "거품광선", 30));
+        pokeDex.put("Pixy", new EvolvedPokemonStruct(
+                "Pixy", 200,
+                "손가락 흔들기", 0,
+                "최면 광선", 20));
+        pokeDex.put("Pukrin", new EvolvedPokemonStruct(
+                "Purin", 200,
+                "노래부르기", 0,
+                "낙서", 100));
     }
     public static final Map<String, String> pokeEvolveDex = new HashMap<>();
     static {
         pokeEvolveDex.put("Kkobugi", "Unuibugi");
         pokeEvolveDex.put("Ppippi", "Pixy");
         pokeEvolveDex.put("Purin", "Pukrin");
-        pokeEvolveDex.put("근육몬", "괴력몬");
     }
 
     // 구체적인 사물을 중심으로 묶었더니 편리하더라
@@ -42,9 +44,6 @@ public class PokemonStruct {
 //    private String skill2Name;
 //    private int skill2Dmg;
 
-    // 외부에 공개하지 않은 private 필드
-    private float innateEvolutionChance;
-
     public PokemonStruct(String monsterName, int maxHp, String skill1Name, int skill1Dmg) {
         this.monsterName = monsterName;
         this.nickName = "";
@@ -52,7 +51,6 @@ public class PokemonStruct {
         this.hp = maxHp;
         this.skill1Name = skill1Name;
         this.skill1Dmg = skill1Dmg;
-        this.innateEvolutionChance = (float) random();
     }
 
     public PokemonStruct(String monsterName, String nickName, int maxHp, String skill1Name, int skill1Dmg) {
@@ -162,18 +160,6 @@ public class PokemonStruct {
                 this.skill1Name, this.skill1Dmg,
                 skill2Name, skill2Dmg
         );
-    }
-
-    public PokemonStruct evolveByInnateChance() {
-        int minimumDiceNeeded = round(this.innateEvolutionChance * 6);
-        int diceRolled = round((float)random() * 6);
-        System.out.println("진화 주사위 눈:"+diceRolled);
-        if (diceRolled >= minimumDiceNeeded) {
-            System.out.println("주사위 눈 숫자에 따라 진화에 성공했습니다.");
-            return this.evolve();
-        }
-        System.out.println("주사위 눈 숫자가 부족해 진화에 실패했습니다.");
-        return this;
     }
 
     public static void pokemonObjectUnitBattle (PokemonStruct pokemon1, PokemonStruct pokemon2){
