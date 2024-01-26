@@ -3,34 +3,35 @@ package pokemoncharactergame;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.lang.Math.random;
+import static java.lang.Math.round;
+
 public class PokemonStruct {
 
     public static final Map<String, PokemonStruct> pokeDex = new HashMap<>();
-    static {
+
+    static void loadPokeDexFixtures() {
         pokeDex.put("Pikachu", new PokemonStruct("Pikachu", 50, "백만볼트", 20));
         pokeDex.put("Kkobugi", new PokemonStruct("Kkobugi", 60 ,"물대포", 15));
         pokeDex.put("Gugu", new PokemonStruct("Gugu", 30, "부리로 쪼기", 10));
         pokeDex.put("Kkoret", new PokemonStruct("kkoret", 40 ,"깨물기", 10));
         pokeDex.put("Ppippi", new PokemonStruct("Ppippi", 100, "손가락 흔들기", 0));
         pokeDex.put("Purin", new PokemonStruct("Purin", 100, "노래부르기", 0));
-        pokeDex.put("Unibugi", new EvolvedPokemonStruct(
-                "어니부기", 120,
-                "물대포", 15,
-                "거품광선", 30));
-        pokeDex.put("Pixy", new EvolvedPokemonStruct(
-                "Pixy", 200,
-                "손가락 흔들기", 0,
-                "최면 광선", 20));
-        pokeDex.put("Pukrin", new EvolvedPokemonStruct(
-                "Purin", 200,
-                "노래부르기", 0,
-                "낙서", 100));
+        pokeDex.put("근육몬", new PokemonStruct("근육몬", 1000, "4연속 펀치", 400));
+
+        pokeDex.put("Unibugi", new EvolvedPokemonStruct("어니부기", 120, "물대포", 15, "거품광선", 30));
+        pokeDex.put("Pixy", new EvolvedPokemonStruct("Pixy", 200, "손가락 흔들기", 0, "최면 광선", 20));
+        pokeDex.put("Pukrin", new EvolvedPokemonStruct("Pukrin", 200, "노래부르기", 0, "낙서", 100));
+        pokeDex.put("괴력몬", new EvolvedPokemonStruct("괴력몬", 3000, "4연속 펀치", 400, "8연속 펀치", 800));
     }
+
+
     public static final Map<String, String> pokeEvolveDex = new HashMap<>();
-    static {
+    static void loadPokeEvolveDexFixtures() {
         pokeEvolveDex.put("Kkobugi", "Unuibugi");
         pokeEvolveDex.put("Ppippi", "Pixy");
         pokeEvolveDex.put("Purin", "Pukrin");
+        pokeEvolveDex.put("근육몬", "괴력몬");
     }
 
     // 구체적인 사물을 중심으로 묶었더니 편리하더라
@@ -43,6 +44,9 @@ public class PokemonStruct {
     private int skill1Dmg;
 //    private String skill2Name;
 //    private int skill2Dmg;
+
+    // 특정한 확률로 진화 합니다.
+    private float innateEvolveChance;
 
     public PokemonStruct(String monsterName, int maxHp, String skill1Name, int skill1Dmg) {
         this.monsterName = monsterName;
@@ -60,6 +64,18 @@ public class PokemonStruct {
         this.hp = maxHp;
         this.skill1Name = skill1Name;
         this.skill1Dmg = skill1Dmg;
+    };
+
+    public PokemonStruct(String monsterName, String nickName, int maxHp, String skill1Name, int skill1Dmg, boolean isEvolveByChance) {
+        this.monsterName = monsterName;
+        this.nickName = nickName;
+        this.maxHp = maxHp;
+        this.hp = maxHp;
+        this.skill1Name = skill1Name;
+        this.skill1Dmg = skill1Dmg;
+        if (isEvolveByChance) {
+            this.innateEvolveChance = (float)random();
+        }
     };
 
     @Override
@@ -160,6 +176,19 @@ public class PokemonStruct {
                 this.skill1Name, this.skill1Dmg,
                 skill2Name, skill2Dmg
         );
+    }
+
+    public PokemonStruct evolveByChance() {
+        int evolveMinDice = round(this.innateEvolveChance * 6);
+        int chanceNowDice = (int) round(random() * 6);  // 0 ~ 1 사이의 값
+        System.out.printf("진화 주사위가 %d 가 나왔습니다!\n", chanceNowDice);
+        if (evolveMinDice <= chanceNowDice) {
+            System.out.println(this.getNickName()+"이(가) 진화에 성공했습니다!");
+            return this.evolve();
+        } else {
+            System.out.println(this.getNickName()+"이(가) 진화에 실패했습니다!");
+            return this;
+        }
     }
 
     public static void pokemonObjectUnitBattle (PokemonStruct pokemon1, PokemonStruct pokemon2){
